@@ -68,7 +68,7 @@ function draw() {
 
 // We can add a creature manually if we so desire
 function makeNewBloop() {
-  world.born(mouseX, mouseY);
+  world.born(width2, height/2);
 
 }
 
