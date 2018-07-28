@@ -13,12 +13,16 @@ function setup() {
   // World starts with 20 creatures
   // and 20 pieces of each seed
   world = new World(20);
-  c.mousePressed(makeNewBloop);
+  //c.mousePressed(makeNewBloop);
   div = createDiv();
+  p = createP("-");
   ss = createP("Background Color");
   slider = createSlider(0, 255, 100);
- //slider.position(10, 10);
- slider.style('width', '80px');
+  slider.style('width', '80px');
+  p1 = createP("-");
+  birdButton = createButton('Make a New Finch');
+  birdButton.mousePressed(makeNewBloop);
+
 }
 
 function draw() {
